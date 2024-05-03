@@ -1,5 +1,4 @@
 #{extends 'main.html' /}
 #{set title:'Home' /}
 
-#{hello 'Bob' /} #{my.tags.howareyou /}
-#{my.tags.verbatim}And here is a verbatim text.#{/my.tags.verbatim}
+#{hello 'from ' + play.configuration.get('application.name') /} #{my.tags.howareyou /}

@@ -1,4 +1,12 @@
-self: play -> library 1
+self: play -> application 1
 
 require:
     - play [1.3,2.0)
+    - play-xabolcs -> library 2
+
+repositories:
+    - xabolcs:
+        type: http
+        artifact: https://github.com/xabolcs/re-play1-examples/releases/download/[module]-[revision]/[module]-[revision].zip
+        contains:
+            - play-xabolcs -> *
